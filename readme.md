@@ -1,6 +1,6 @@
 # Laravel 5.3 starter app
 
-Клонировать репозиторий `git clone https://github.com/seoperin/laravel-starter.git .`
+Клонировать репозиторий `git clone https://github.com/seoperin/laravel-starter-5.3.git .`
 
 Изменить настройки в файле **.env**
 
