@@ -29,7 +29,5 @@ Route::post('password/reset', ['as' => 'password.reset', 'uses' => 'Auth\ResetPa
 
 
 Route::get('/', function () {
-    return view('frontend.welcome');
+    return view('frontend.home');
 });
-
-Route::get('/home', 'HomeController@index');
