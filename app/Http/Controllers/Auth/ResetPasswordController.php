@@ -46,4 +46,24 @@ class ResetPasswordController extends Controller
             ['token' => $token, 'email' => $request->email]
         );
     }
+
+    /**
+     * Display the form to request a password reset link.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function showLinkRequestForm()
+    {
+        return view('frontend.auth.passwords.email');
+    }
+
+    /**
+     * Get the post register / login redirect path.
+     *
+     * @return string
+     */
+    public function redirectPath()
+    {
+        return property_exists($this, 'redirectTo') ? $this->redirectTo : '/';
+    }
 }
